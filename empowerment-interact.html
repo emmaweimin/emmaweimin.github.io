@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Empowerment through Architecture</title>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.0/processing.min.js"></script>
+
+        <style>
+            body {
+                background-color: black;
+            }
+
+            h1 {
+                text-align: center;
+                font-family: monospace;
+                color: #17528a;
+                padding-top: 2%;
+                font-size: 24pt;
+            }
+
+            h3 {
+                text-align: center;
+                font-family: monospace;
+                font-size: 13pt;
+                font-style: italic;
+            }
+
+            #links {
+                text-align: center;
+                padding-top: 3px;
+                padding-bottom: 1%;
+                font-family: monospace;
+                letter-spacing: 1px;
+                border-top: 2px solid tomato;
+                margin-right: 20%;
+                margin-left: 20%;
+                font-size: 10pt;
+            }
+
+            #links2 {
+                text-align: center;
+                padding-top: 3px;
+                padding-bottom: 2%;
+                font-family: monospace;
+                padding-left: 2%;
+            }
+
+            a:link, a:visited {
+                text-decoration: none;
+                color: white;
+            }
+
+            a:hover {
+                font-style: italic;
+                color: tomato;
+            }
+
+            h2 {
+                text-align: center;
+                font-family: monospace;
+                border-top: 2px solid rgb(23, 138, 115);
+                margin-right: 20%;
+                margin-left: 20%;
+                padding-top: 2%;
+            }
+
+        #interact{
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            padding-top: 3%;
+        }
+
+        button {
+                background-color: white;
+                border: none;
+                color: tomato;
+                padding: 12px 18px;
+                text-align: center;
+                font-size: 11px;
+                margin: 3px 2px;
+                opacity: 0.4;
+                transition: 0.3s;
+                display: inline-block;
+                text-decoration: none;
+                cursor: pointer;
+                margin-left: 47.5%;
+                margin-top: 3%;
+                margin-bottom: 2%;
+            }
+
+        button:hover {opacity: 1};
+
+        </style>
+    </head>
+        <body>
+        <script type="application/processing">
+        
+            PFont f;
+			f = createFont("Cambria",16,true);
+			void setup() {
+            size(800, 600);
+            noStroke();
+			textFont(f);
+            }
+            
+            void draw() {
+                float x = mouseX;
+                float y = mouseY;
+                float ix = width - mouseX; 
+                float iy = height - mouseY;
+                background(0);
+                    fill(237,235,218, 200);
+                ellipse(x, height/2, y, y);
+                    fill(10,180);
+                ellipse(ix, height/2, iy, iy);
+                textSize(18);
+                    fill(0);  
+                    text("ARE THERE SPACES", 30, 400);
+				textSize(18);
+                    fill(0);  
+                    text("WHERE YOU FEEL", 30, 420);
+				textSize(18);
+                    fill(0);  
+                    text("CONFINED?", 30, 440);
+                textSize(18);
+                    fill(0);  
+                    text("IN WHAT SPACES", 510, 200);
+				textSize(18);
+                    fill(0);  
+                    text("DO YOU FEEL", 510, 220);
+				textSize(18);
+                    fill(0);  
+                    text("EMPOWERED?", 510, 240);
+                textSize(12.5);
+                    String s = ("SPACE AS A POLITICAL AGENT");
+                    fill(214,78,47);
+                    text(s, 325,375,120,100);
+                rect(390,290,20,20);
+                    fill(255);
+            
+            if (mousePressed) {
+                rect(0, 0, 800, 600);
+                    fill(255);
+                    stroke(214,78,47);
+                textSize(32);
+                    fill(214,78,47);
+                    text("MODERNISM", 400,400);
+                ellipse(40,40,600,600);
+                    fill(214,78,47);
+                textSize(18);
+                    fill(10);
+                    text("POLITICS +", 400,355);
+                ellipse(225,450,220,220);
+                    fill(10);
+                textSize(14);
+                    fill(255);
+                    text("RIGHTS TO PUBLIC",163,445);
+                textSize(14);
+                    fill(255);
+                    text("SPACE & ACCESSIBILITY",152,464);
+                textSize(18);
+                    fill(120);
+                    text("AESTHETICS =", 400,372);
+                ellipse(600,200,210,210);
+                    fill(120);
+                textSize(14);
+                    fill(255);
+                    text("PERCEPTION INDICATES",520,200);
+                textSize(14);
+                    fill(255);
+                    text("STATUS", 575,220);
+                textSize(20);
+                    fill(255);
+                    text("INHERENTLY EXCLUSIVE", 30,160);
+                }               
+            }
+        
+        </script>
+        <canvas id="interact"></canvas>
+
+        <div id="button">
+            <button type="button" onclick="myFunction()">EXPLORE</button>
+        </div>
+    
+        <script>
+            function myFunction() {
+            location.href = "arch-empowerment.html";
+        }
+        </script>
+
+
+    <nav id="links">
+        <p><a href="index.html">HOME</a></p>
+        <p><a href="about.html">ABOUT</a></p>
+        <p><a href="body-interact.html">THE BODY, IDENTITY & LANDSCAPE</a></p>
+        <p><a href="modernism-interact.html">THE VIOLENCE OF MODERNISM</a></p>
+        <p><a href="arch-empowerment.html">EMPOWERMENT THROUGH ARCHITECTURE</a></p>
+        <p><a href="sources.html">SOURCES</a></p>
+    </nav>
+
+    </body>
+</html>
