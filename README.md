@@ -1,2 +1,1 @@
-# emmaweimin.github.io
- 
+Emma Palacio is a candidate for a Master's degree in architecture at Northeastern University and holds a Bachelor of Science in Historic Preservation from Temple University. Growing up in Philadelphia, Emma is interested in the development of cities and their infastructure, along with the historcal implications of buildings. In addition to this, Emma is intrigued by the dynamics between people and architecture as both a concept and individual relationship. Emma believes that architecture is often more personal than considered therefore, its knowledge and systems should be accessible to the public.
