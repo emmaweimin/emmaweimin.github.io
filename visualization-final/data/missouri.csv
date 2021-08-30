@@ -1,0 +1,47 @@
+city,pop,computer,transit,race
+Affton,1476,1438,37,black
+Berkley,9332,8430,553,black
+Breckenridge Hills,9470,8390,177,black
+Brentwood,329,310,0,black
+Clayton,1494,330,23,black
+Creve Coeur,1489,1385,0,black
+Des Peres,305,272,5,black
+Ferguson,14582,13285,373,black
+Frontenac,305,272,5,black
+Jennings,39462,35599,1666,black
+Kinloch,218,154,7,black
+Kirkwood,1939,1613,0,black
+Lemay,1712,1571,252,black
+Maplewood,1524,1260,143,black
+Normandy,19317,16390,1006,black
+North County,30378,27990,1311,black
+Olivette,4542,4292,129,black
+Overland,9470,8390,177,black
+Richmond Heights,899,792,0,black
+University City,10877,9254,642,black
+Webster Groves,2587,2263,8,black
+Sappington,618,521,1,black
+St. Louis,152234,123434,9784,black
+Affton,45747,42747,214,white
+Berkley,3857,3464,6,white
+Breckenridge Hills,21469,19693,109,white
+Brentwood,7464,7213,31,white
+Clayton,23755,20283,231,white
+Creve Coeur,16004,14996,26,white
+Des Peres,16063,15692,21,white
+Ferguson,6380,5946,32,white
+Frontenac,16063,15692,21,white
+Jennings,3173,2455,30,white
+Kinloch,104,93,2,white
+Kirkwood,35767,34601,75,white
+Lemay,28971,26320,151,white
+Maplewood,7374,7068,199,white
+Normandy,3261,2478,73,white
+North County,6629,5374,159,white
+Olivette,7005,6774,153,white
+Overland,21469,19693,109,white
+Richmond Heights,7278,7013,110,white
+University City,15064,14206,349,white
+Webster Groves,30290,28074,226,white
+Sappington,470779,44266,82,white
+St. Louis,210239,192145,2739,white
