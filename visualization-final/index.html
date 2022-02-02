@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Palacio - ARTG5330 Final</title>
+
+        <link rel="stylesheet" type="text/css" href="./style.css">
+
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+    </head>
+
+    <body>
+        <h1>Contextualizing Architecture</h1>
+
+            <div class="navbar">
+                <a href="sources.html">SOURCES</a>
+            </div>
+
+            <h2>Introduction</h2>
+
+                <p id="text2">This webpage is intended to explore the relationship between the failure of Pruitt-Igoe, a housing project during the 1950's, and the present day life of St. Louis, Missouri. The data complied to create the map and scatterplot below were generated from <a class="map-link" target="_blank" href="https://www.nhgis.org/">IPUMS NHGIS</a> and includes census information from 2015-2019. The population data assigned to the map is categorized by zip code, which are represented by circles. Public parks within Missouri are further distinguished by the green spaces. The park location information was sourced from <a class="map-link" target="_blank" href="https://www.stlouis-mo.gov/data/datasets/dataset.cfm?id=46">STLOUIS-MO</a>. By contextualizing their spatial information with demographic data, we can begin to understand the disparity of these resources to particular communities. Median income by zip code is additionally represented, which has been generated through the same method as the population map. To construct the scatterplot, zip code information was condensed by city or suburb areaa in order to show the comparison between demographics. It additionally adds to understanding the context of this area, as the relationship between computer ownership and method of transportation to work are depicted. The Black population is represented by the purple circles, while the White population corresponds to the blue circles. Population size is analogous to the radius of each circle. In understanding the housing project itself and this data, one may be able to begin to trace how its failure has impacted the area's development.</p>
+
+            <h2>Pruitt-Igoe: St. Louis, Missouri</h2>
+
+                <p id="text2">Pruitt-Igoe was a housing project that was constructed during the 1950's in St. Louis, Missouri. It was intended to solve the disparity in affordable housing however, its failure attests to the lack of maintenance and responsibility that the developers and architects willfully ignored. In this case, the harm was caused through this lack of afterthought that led to its declining state and ultimate demolition. By putting people in homes in which they did not have the funds to upkeep, without providing external support, its inhabitants were left to its despair. One fault that lies within the failure of Pruitt-Igoe was the lack of acknowledging hardships due to race and class. Therefore, this webpage intends to serve as a contrast to this lack of consideration by highlighting some of the city's current census information.</p>
+
+            <h2>Analysis</h2>
+
+                <p id="text2">In comparing the two maps together, one can see that the zip code area with the highest Black population is farthest North from the city area and the concentration of public parks. In contrast, the median income map shows us that the wealthiest areas correspond to areas with the lowest Black population, while they are located West of the general groupings of public parks. However, the areas that closely surround Forest Park (the largest park on the map) are on the higher end of the wealth spectrum, especially on the West side. Together these maps tell us that the majority of Black people who live in Missouri do not have easy access to public parks, while the median income map begins to question the level of upkeep that these parks may recieve.</p>
+
+                <p id="text2">The scatterplot additionally brings forth critical points as one can clearly see the drastic difference between the demographics of who relies on public transportation to get to work and who does not. In terms of the Black population in St. Louis, they have the highest number of people who commute to work via public transportation. However, only about half the amount of people who do so have access to a personal computer compared the the highest number of White people who commute to work by public transportation in St. Louis. Overall, the amount of White people who travel to work this way is signifigantly smaller than those within the Black population. The correlation between these two factors points to trends that may have historically hindered particular communities, while suggesting some of the potential hardships they may have faced during the pandemic. The scatterplot clearly depicts that more White people own personal computers and less of them commute by public transportation. This correlation suggests that more White people in Missouri may have been able to work from home during the pandemic, while many of the Black people in this area may not have had the same luxury.</p>
+
+            <div id="section2">
+                <h2>Missouri: Black Population by Zip Code</h2>
+                    <div id='map' style='width: 400px; height: 300px;'></div>
+                    <script>
+                    mapboxgl.accessToken = 'pk.eyJ1IjoiZW1tYXBhbGFjaW8iLCJhIjoiY2ttZXd1dTU0Mno1ZDMwdzB5cGQzNnp3aiJ9.WOO3zGxaP9t8WBufMwAUhQ';
+                    var map = new mapboxgl.Map({
+                        container: 'map',
+                        style: 'mapbox://styles/emmapalacio/cknnachn10baq17ohshets7wj',
+                        center: [-90.2075, 38.6415],
+                        zoom: 14.5
+                    });
+                    </script>
+
+                    <button type="button" onClick="reloadThePage()">RECENTER</button>
+                    <script>
+                        function reloadThePage(){
+                            window.location.reload();
+                        } 
+                    </script>
+
+                    <p id="map-caption"> View <a class="map-link" href="map2.html">median income</a> by zip code.</p>
+            </div>
+
+            <h2 id="data-title">Missouri: Computer Access & Work Commute (2015-2019)</h2>
+                <div id="container">
+                    <div id="options">
+                        <h4>Filter by Demographic</h4>
+                        <input type="checkbox" class="race" value="black" checked> Black Population <br>
+                        <input type="checkbox" class="race" value="white" checked> White Population <br>
+                    </div>
+                <div id="chart-container">
+                    <div id="chart"></div>
+                </div>
+                <div id="chart"></div>
+                <script src="./script.js"></script>
+    </body>
+</html>

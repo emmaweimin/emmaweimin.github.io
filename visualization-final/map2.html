@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Palacio - ARTG5330 Final</title>
+
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+
+        <link rel="stylesheet" type="text/css" href="./style.css">
+    </head>
+
+    <body>
+        <h2>Missouri: Median Income by Zip Code</h2>
+        <div class="navbar">
+            <a href="index.html">HOME</a>
+        </div>
+
+        <div id='map' style='width: 400px; height: 300px;'></div>
+        <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiZW1tYXBhbGFjaW8iLCJhIjoiY2ttZXd1dTU0Mno1ZDMwdzB5cGQzNnp3aiJ9.WOO3zGxaP9t8WBufMwAUhQ';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/emmapalacio/cknnb2y940hnl17my3y45ru5h',
+            center: [-90.2075, 38.6415],
+            zoom: 14.5
+        });
+        </script>
+
+        <button type="button" onClick="reloadThePage()">RECENTER</button>
+
+        <script>
+            function reloadThePage(){
+                window.location.reload();
+            } 
+            </script>
+
+        <p id="map-caption2">This map shows the various public parks that are located within Missouri along with the median household income by zip code, which are distinguished by the orange circles. Click to view the <a class="map-link" href="index.html#section2">Black population map</a>.</p>
+
+        <div class="navbar">
+            <a href="sources.html">SOURCES</a>
+        </div>
+
+    </body>
+</html>
